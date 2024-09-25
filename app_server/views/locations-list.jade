@@ -1,0 +1,36 @@
+extends layout
+
+block content
+  .row.banner
+    .col-12
+      h1 Online Shopping Store
+      small &nbsp;Discover the latest products and exclusive deals!
+
+  // Listing template for app_server/views/products-list.pug
+  // Name of the product and a link to the product page
+  // Uses Font Awesome icons to output a star rating
+  // Uses Bootstrap’s badge helper class to display the price
+  // Description of the product
+  // Features of the product, output using Bootstrap’s badge classes
+
+  .row
+    .col-12.col-md-8
+      .card
+        .card-block
+          h4
+             a(href="/location") zara
+            small &nbsp;
+            i.fas.fa-star
+            i.fas.fa-star
+            i.fas.fa-star
+            i.far.fa-star
+            i.far.fa-star
+            span.badge.badge-pill.badge-success.float-right $49.99
+          p.description Shop the latest styles from the Zara collection.
+          p.features
+            span.badge.badge-warning New Arrivals
+            span.badge.badge-warning Best Seller
+            span.badge.badge-warning Free Shipping
+
+    .col-12.col-md-4
+      p.lead Looking for the best online shopping experience? Our store offers a wide range of products with unbeatable prices and convenient delivery options. Find everything you need right here!

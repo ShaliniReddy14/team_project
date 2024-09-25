@@ -1,0 +1,112 @@
+extends layout
+
+block content
+  link(rel='stylesheet', href='/assets/z.css')  // Ensure this path is correct
+
+  .row.banner
+    .col-12
+      h1 ZARA
+
+  .row
+    .col-12.col-lg-9
+      .row
+        .col-12.col-md-6
+          p.rating
+            i.fas.fa-star
+            i.fas.fa-star
+            i.fas.fa-star
+            i.far.fa-star
+            i.far.fa-star
+          p 123 Shopping Ave, City, ST 12345
+
+          .card.card-primary
+            .card-block
+              h2.card-title Customer Service Hours
+              p.card-text Monday - Friday: 9:00am - 8:00pm
+              p.card-text Saturday: 10:00am - 6:00pm
+              p.card-text Sunday: Closed
+
+          .card.card-primary
+            .card-block
+              h2.card-title Featured Products
+              span.badge.badge-warning
+                i.fa.fa-check
+                | &nbsp;New Arrivals
+              | &nbsp;
+              span.badge.badge-warning
+                i.fa.fa-check
+                | &nbsp;Discounted Items
+              | &nbsp;
+              span.badge.badge-warning
+                i.fa.fa-check
+                | &nbsp;Best Sellers
+
+        .col-12.col-md-6.location-map
+          .card.card-primary
+            .card-block
+              h2.card-title Store Image
+              img.img-fluid.rounded(src='/images/zara.jpg', alt='Zara Store Image') // Ensure the image name and extension are correct
+
+    .row
+      .col-12
+        .card.card-primary.review-card
+          .card-block
+            a.btn.btn-primary.float-right(href='/product/review/new') ➥ Add Review
+            h2.card-title Customer Reviews
+            .row.review
+              .col-12.no-gutters.review-header
+                span.rating
+                  i.fas.fa-star
+                  i.fas.fa-star
+                  i.fas.fa-star
+                  i.fas.fa-star
+                  i.fas.fa-star
+                span.review Author Sarah Lee
+                small.review Timestamp 5 March 2022
+              .col-12
+                p Excellent quality and customer service!
+
+            .row.review
+              .col-12.no-gutters.review-header
+                span.rating
+                  i.fas.fa-star
+                  i.fas.fa-star
+                  i.fas.fa-star
+                  i.fas.fa-star
+                  i.far.fa-star
+                span.review Author Michael Brown
+                small.review Timestamp 2 March 2022
+              .col-12
+                p Good selection but delivery took longer than expected.
+
+            .row.review
+              .col-12.no-gutters.review-header
+                span.rating
+                  i.fas.fa-star
+                  i.fas.fa-star
+                  i.fas.fa-star
+                  i.fas.fa-star
+                  i.far.fa-star
+                span.review Author Emma Wilson
+                small.review Timestamp 4 March 2022
+              .col-12
+                p Really liked the products, will shop again!
+
+            .row.review
+              .col-12.no-gutters.review-header
+                span.rating
+                  i.fas.fa-star
+                  i.fas.fa-star
+                  i.fas.fa-star
+                  i.fas.fa-star
+                  i.far.fa-star
+                span.review Author David Smith
+                small.review Timestamp 3 March 2022
+              .col-12
+                p The checkout process was smooth and easy!
+
+    .col-12.col-lg-3
+      p.lead
+        | Welcome to our e-commerce store! Enjoy seamless shopping with a variety of products and fast delivery.
+      p
+        | If you've shopped with us and have feedback, please leave a review to help others make informed choices.
